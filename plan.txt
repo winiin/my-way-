@@ -1,0 +1,11 @@
+MY-WAY/
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── app.js
+├── backend/
+│   ├── server.js
+│   ├── db.js
+│   └── schema.sql
+├── .env.example
+└── package.json
