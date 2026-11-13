@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11111d">
+  <title>MY WAY — Your Life, Your Way</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-icon">✦</span>
+      <span>MY WAY</span>
+    </div>
+
+    <div class="profile-mini">
+      <div class="avatar">M</div>
+      <div>
+        <strong id="userName">My Profile</strong>
+        <small id="userLevel">Level 1</small>
+      </div>
+    </div>
+
+    <nav id="navigation">
+      <button data-page="dashboard" class="nav-item active">⌂ Dashboard</button>
+      <button data-page="finance" class="nav-item">◈ Finance</button>
+      <button data-page="goals" class="nav-item">◎ Goals</button>
+      <button data-page="habits" class="nav-item">✧ Habits</button>
+      <button data-page="planner" class="nav-item">▦ Planner</button>
+      <button data-page="games" class="nav-item">♧ Games</button>
+      <button data-page="achievements" class="nav-item">🏆 Achievements</button>
+      <button data-page="studio" class="nav-item">✦ MY WAY Studio</button>
+      <button data-page="rewards" class="nav-item">◇ Rewards</button>
+      <button data-page="ai" class="nav-item">✳ AI Assistant</button>
+      <button data-page="settings" class="nav-item">⚙ Settings</button>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <div class="coin-display">🪙 <span id="coins">0</span> MY Coins</div>
+      <div class="xp-display">⚡ <span id="xp">0</span> XP</div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <header class="topbar">
+      <div>
+        <small id="dateLabel"></small>
+        <h2 id="pageTitle">Dashboard</h2>
+      </div>
+
+      <div class="top-actions">
+        <select id="language">
+          <option value="ru">🇷🇺 RU</option>
+          <option value="kz">🇰🇿 KZ</option>
+          <option value="en">🇬🇧 EN</option>
+        </select>
+        <button class="icon-button" id="themeButton">☾</button>
+      </div>
+    </header>
+
+    <section id="content"></section>
+
+    <footer>
+      <span>MY WAY</span>
+      <span>Your Life. Your Decisions. Your Way.</span>
+    </footer>
+
+  </main>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
